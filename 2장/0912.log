@@ -1,0 +1,79 @@
+10+20
+30
+console.log("안녕하세요.")
+VM279:1 안녕하세요.
+undefined
+ale
+VM371:1 Uncaught ReferenceError: ale is not defined
+    at <anonymous>:1:1
+(익명) @ VM371:1
+alert("안녕하세요")
+undefined
+a = 10
+10
+alert(a)
+undefined
+confi
+VM508:1 Uncaught ReferenceError: confi is not defined
+    at <anonymous>:1:1
+(익명) @ VM508:1
+confirm("종료하시겠습니까?")
+false
+prompt("당신의 이름은?)
+VM669:1 Uncaught SyntaxError: Invalid or unexpected token
+prompt("당신의 이름은?")
+'이명준'
+prompt("종료하시겠습니까?(예/아니오)", "예")
+'예'
+name = "이명준"
+'이명준'
+console.log(name + "님 환영합니다.")
+VM1044:1 이명준님 환영합니다.
+undefined
+document.write("제 이름은 " + name + "입니다.")
+undefined
+let result
+undefined
+result = 10
+10
+result = 20
+20
+const number = 10
+undefined
+number
+10
+number = 20
+VM1532:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:8
+(익명) @ VM1532:1
+let age = 23
+undefined
+console.log(name + "님 나이는" + age + "세 입니다.")
+VM1730:1 이명준님 나이는23세 입니다.
+undefined
+console.log(`${name}님의 나이는 ${age}세 입니다.`)
+VM1839:1 이명준님의 나이는 23세 입니다.
+undefined
+let student = {
+    major : "컴퓨터공학부",
+    idNum : 202095066,
+    name : "이명준",
+}
+undefined
+student
+{major: '컴퓨터공학부', idNum: 202095066, name: '이명준'}
+student.name
+'이명준'
+student["major"]
+'컴퓨터공학부'
+let id = Symbol()
+undefined
+const member = {
+    name : "이명준",
+    [id] : 12345
+}
+undefined
+member
+{name: '이명준', Symbol(): 12345}
+member[id]
+12345
