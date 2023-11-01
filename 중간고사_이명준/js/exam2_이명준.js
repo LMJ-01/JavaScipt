@@ -2,6 +2,10 @@ const open = document.querySelector("#open");  //버튼을 가져와 open
 const modalBox = document.querySelector("#modal-box");
 const close = document.querySelector("#close"); // 박스가 사려져야 하므로 close
 
+close.addEventListener("click", () => {
+modalBox.classList.remove("active");
+});
+
 open.addEventListener("click", () => {
     modalBox.classList.toggle("active"); // 클릭하면 .active 스타일을 토글
 
@@ -10,8 +14,10 @@ open.addEventListener("click", () => {
     let Timer = setInterval(() => {
         // 이미 타이머가 실행 중인지 확인하고 중지
         modalTimer++;
-    if (modalTimer === 5) {
-        clearTimeout(Timer);
+    if (modalTimer) {
+        clearTimeout(modalTimer);
+
+        modalBox.classList.remove("active");
     } 
-    }, 5000)  // 5초
+    }, 5000);  // 5초
 });
