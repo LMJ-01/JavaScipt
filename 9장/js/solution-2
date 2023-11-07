@@ -1,0 +1,32 @@
+// 클래스 생성
+class Pet {
+    // 프로퍼티 생성
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+
+    // // 메서드 
+    // run() {
+    //     document.write(`<h1>${this.color} ${this.name}가 달린다.</h1>`);
+    // }
+}
+
+// 객체 생성
+const pet1 = new Pet("바둑이", "하얀");
+pet1.run();
+
+// 상속
+class Cat extends Pet {
+    constructor(name, color, breed) {
+        super(name, color);
+        this.breed = breed;
+    }
+    runCat() {
+        document.write(`<h1> 이름 : ${this.name} 품종 : ${this.breed} 색깔 : ${this.color}</h1>`);
+        document.write(`<h1>${this.color} ${this.name}가 달린다.</h1>`);
+    }
+}
+
+const pet2 = new Cat("보리", "흰색", "페르시안 친칠라");
+pet2.runCat();

@@ -1,5 +1,6 @@
 // 생성자 함수 정의하기(만들기)
 function Book(title, page, done = false) {
+    // 포로퍼티
     this.title = title;
     this.page = page;
     this.done = done;
@@ -14,7 +15,7 @@ function Book(title, page, done = false) {
 // 생성자 함수를 사용하여 객체 만들기
 // 3개의 인수를 가지고 객체 생성
 const book1 = new Book("모던 자바스크립트" ,650, false);
-const book2 = new Book("JAVA" , 650, false);
+const book2 = new Book("JAVA" , 650, true);
     
 document.write(`<h2>생성자 함수를 객체 만들기 </h2>`);
 document.write(`${book1.title} - ${book1.page}쪽 - ${book1.finish()}<br>`);
@@ -38,7 +39,7 @@ class Book2 {
     }
 }
 const book3 = new Book2("모던 자바스크립트" ,650, false);
-const book4 = new Book2("JAVA" , 650, false);
+const book4 = new Book2("JAVA" , 650, true);
     
 document.write(`<hr><h2>클래스로 객체 만들기 </h2>`);
 document.write(`${book3.title} - ${book3.page}쪽 - ${book3.finish()}<br>`);
