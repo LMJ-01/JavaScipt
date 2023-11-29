@@ -1,6 +1,6 @@
 table {
   display:inline-block;
-  width:300px;
+  width:400px;
   margin:10px;
 }
 table, td, th {
@@ -8,9 +8,9 @@ table, td, th {
   border-collapse:collapse;
 }
 th {
-  width:80px;
+  width:120px;
 }
 td {
-  width:210px;
+  width:280px;
   padding:10px 20px;
 }
